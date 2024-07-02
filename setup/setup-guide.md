@@ -1,37 +1,39 @@
-# Instructions for creating a PMTutor watsonx Assistant
-This file provides you with detailed step-by-step instructions to help you create your PMTutor watsonx Assistant. 
-Please make sure the prerequisites are met before proceeding the setup.
+# Instructions for creating a PMTutor watsonx assistant
+This document provides detailed step-by-step instructions to help you create an instance of PMTutor watsonx assistant. 
+Before proceeding, please make sure the prerequisites below are met.
 
 ## Prerequisites
 * PMTutor databases (Instructions coming soon!)
-* PMTutor webhook instance: You can find the source code at [pmtutor-webhook](https://github.com/erasmus-chatlearn/pmtutor-webhook)
+* PMTutor webhook middleware: You can find the source code at [pmtutor-webhook](https://github.com/erasmus-chatlearn/pmtutor-webhook)
 * IBM watsonx Assistant Plus
-* IBM IAM user with Operator and Manager access rights to the watsonx service 
+* IBM Cloud IAM user with Operator and Manager access rights to the watsonx service 
 * OpenAI API key
 
-## Step 1: Create a new watsonx Assistant
-If you have not created any watsonx Assistant before in your IBM subscription, 
-the watsonx Assistant view will guide you through creating your first assistant.
+## Step 1: Create a new watsonx assistant
+Go to watsonx assistant service view from IBM Cloud dashboard.
+
+If you have not created any watsonx assistant before in your IBM subscription, the watsonx assistant view will guide you
+through creating your first assistant. The screenshots below show how to create a watsonx assistant in the service view.
 
 ![Welcome View: Create](./images/create-watsonx-assistant-first-time-1.png)
-*The welcome view for creating your first watsonx Assistant*
+*The welcome view for creating your first watsonx assistant*
 
 ![Welcome View: Personalize](./images/create-watsonx-assistant-first-time-2.png)
-*Provide required information for personalization&mdash;you can update your settings later*
+*Provide required information for personalization&mdash;you can update your assistant settings later*
 
 ![Welcome View: Customize](./images/create-watsonx-assistant-first-time-3.png)
-*You can upload an avatar set the UI styles for your assistant*
+*You can upload an avatar and set the UI styles for your assistant or use the default settings*
 
 ![Welcome View: Preview](./images/create-watsonx-assistant-first-time-4.png)
 *Click "Create" button to complete the steps*
 
 ![Assistant View](./images/create-watsonx-assistant-first-time-5.png)
-*You should see your assistant view after it has been successfully created*
+*You should see the assistant view after it has been successfully created*
 
-### Creating another watsonx Assistant
+### Creating another watsonx assistant (Optional)
 You might want to create another assistant later for different purposes. The steps for creating another one is simpler.
 
-You can find the option "Create New +" from the dropdown list in the top menu bar, when
+You can find the option "Create New +" from the dropdown list in the top menu bar when
 you click on the name of the current assistant.
 ![Button for creating another assistant](./images/create-another-watsonx-assistant-1.png)
 *Find "Create New +" option from the top menu bar*
@@ -39,17 +41,19 @@ you click on the name of the current assistant.
 ![Form for creating another assistant](./images/create-another-watsonx-assistant-2.png)
 *Fill up the required fields and click on "Create assistant"*
 
-## Step 2: Activate dialog
-The screenshots below show how to navigate to Assistant settings to activate dialog.
+Once created, you will see the assistant view with the name of newly created assistant displayed. 
 
-![Navigate to Assistant settings](./images/activate-dialog-1.png)
-*Assistant settings is located in the bottom of the side bar menu*
+## Step 2: Activate dialog
+The screenshots below show how to navigate to assistant settings to activate dialog.
+
+![Navigate to assistant settings](./images/activate-dialog-1.png)
+*assistant settings is located in the bottom of the side bar menu*
 
 ![Go to Dialog section](./images/activate-dialog-2.png)
 *Click on Activate dialog*
 
 ![Confirm dialog activation](./images/activate-dialog-3.png)
-*Click on another Activate dialog button to confirm the activation"*
+*Click on another Activate dialog button to confirm the activation*
 
 ## Step 3: Upload dialog skill
 Navigate to Dialog view by hovering over the sidebar menu and clicking on Dialog.
@@ -126,7 +130,7 @@ Click Add to integrate it to your Draft environment.
 ![Review custom extension configuration](./images/create-oai-extension-11.png)
 *Click Finish*
 
-After successfully integrating to your Draft environment, you should see your OpenAI platform extension in 
+After successfully integrating the extension to your Draft environment, you should see your OpenAI platform extension in 
 Environments > Draft.
 ![Draft environment](./images/create-oai-extension-12.png)
 
@@ -134,7 +138,9 @@ You should also integrate the extension to the Live environment by clicking on L
 in the OpenAI extension.
 ![Add extension to Live environment](./images/create-oai-extension-13.png)
 
-It will walk you through the previous steps in [configure custom extension](#configure-custom-extension-for-an-assistant-environment).
+It will take you through the previous steps in [configure custom extension](#configure-custom-extension-for-an-assistant-environment).
 
+After successfully completing the above steps, it might take a little time to train the intents. You can then
+start interact with PMTutor watsonx assistant.
 
 
