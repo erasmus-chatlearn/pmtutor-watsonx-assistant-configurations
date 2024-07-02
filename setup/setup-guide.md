@@ -141,6 +141,9 @@ in the OpenAI extension.
 It will take you through the previous steps in [configure custom extension](#configure-custom-extension-for-an-assistant-environment).
 
 After successfully completing the above steps, it might take a little time to train the intents. You can then
-start interact with PMTutor watsonx assistant.
+start interact with PMTutor watsonx assistant and explore the dialog skill.
+
+By creating a version after completing the setup steps, you are free to explore and make changes and then discard the changes. 
+You can manage versions following [the version control instructions](../development/development.md#familiarize-with-watsonx-assistant-version-control).
 
 
